@@ -3,9 +3,9 @@ import * as Config from './../constants/Config';
 
 export default function callApi(endpoint, method = 'GET', body) {
 	return axios({
-      method: 'GET',
+      method: method,
       url: `${Config.API_URL}/${endpoint}`,
-      data: null
+      data: body
     })
     .catch(error => {
       console.log(error);
