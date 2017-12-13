@@ -1,0 +1,66 @@
+Rest Properties:
+https://github.com/tc39/proposal-object-rest-spread
+
+Random string key:
+https://www.npmjs.com/package/randomstring
+https://www.npmjs.com/package/random-string
+
+Arrow function ES6:
+https://www.w3schools.com/jsref/dom_obj_document.asp
+https://developer.mozilla.org/vi/docs/Web/JavaScript/Reference/Functions/Arrow_functions
+https://freetuts.net/arrow-function-trong-es6-606.html
+===========================================
+
+Redux tutorial:
+https://redux.js.org/
+https://codeaholicguy.com/2016/06/28/hoc-reactredux-qua-vi-du-thuc-te-khoi-tao-project/
+
+React - Router:
+https://reacttraining.com/react-router/web/guides/philosophy
+Install : https://www.npmjs.com/package/react-router-dom
+Router basic:
+https://reacttraining.com/react-router/web/example/basic
+
+Connect API:
+https://www.mockapi.io/       ---     Demo: http://www.mockapi.io/projects/
+https://github.com/typicode/json-server
+https://pokeapi.co/
+Ex: https://pokeapi.co/api/v2/pokemon/1/
+Docs: https://code.tutsplus.com/vi/tutorials/fake-rest-api-up-and-running-using-json-server--cms-27871
+
+Mail user extention:
+reactredux1194@gmail.com
+
+Setting extention Chrome:
+https://www.getpostman.com/
+===============================
+React+Redux tutorial youtube :
+https://www.youtube.com/watch?v=Bo4vhKsetvc&index=65&list=PLJ5qtRQovuEOoKffoCBzTfvzMTTORnoyp
+
+Github: 
+https://github.com/nghiepuit/
+https://github.com/nghiepuit/lesson14-cart-redux-project
+
+Redux docs:
+https://redux.js.org/
+Ex: 
+https://redux.js.org/docs/basics/ExampleTodoList.html
+
+Action: 
+https://redux.js.org/docs/basics/Actions.html
+
+Connect react-redux:
+https://www.sohamkamani.com/blog/2017/03/31/react-redux-connect-explained/
+=====================================
+
+React + Redux App docs:
+https://redux.js.org/
+
+MVC: https://github.com/reactjs/redux/tree/master/examples/todomvc
+
+Provider Redux:
+https://codeaholicguy.com/2016/09/06/hoc-reactredux-qua-vi-du-thuc-te-ket-noi-react-voi-redux/
+https://github.com/reactjs/react-redux/blob/master/docs/api.md
+
+Rewrite url by htaccess:
+http://www.laptrinhwebphp.com/huong-dan-rewrite-url-su-dung-htaccess.html
