@@ -41,4 +41,4 @@ const mapStateToProps = (state) => {
 }
 
 // export default ProductListPage;
-export default connect(mapStateToprops, null)(ProductListPage);
+export default connect(mapStateToProps , null)(ProductListPage);
