@@ -14,7 +14,7 @@ var findIndex = (products, id) => {
 
 const products = (state = initialState, action) => {
 	var index = -1;
-	var id = action;
+	var { id } = action;
 	switch (action.type) {
 		case Types.FETCH_PRODUCT:
 			state = action.products;
