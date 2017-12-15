@@ -3,48 +3,17 @@ import ProductList from './../../components/ProductList/ProductList';
 import ProductItem from './../../components/ProductItem/ProductItem';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
-import callApi from './../../utils/apiCaller';
+import  { actFetchProductRequest, actDeleteProductRequest } from './../../actions/index';
 
 class ProductListPage extends Component {
 
-  constructor(props) {
-    super(props)
-    this.state = {
-      products: []
-    };
-  }
-
   componentDidMount() {
-    callApi('products', 'GET', null).then(response => {
-      this.setState({
-        products: response.data
-      });
-    })
-  }
-
-  findIndex = (products, id) => {
-    var result = -1;
-    products.forEach((product, index) => {
-      if (product.id === id) {
-        result = index;
-      }
-    });
-    return result;
+    this.props.fetchAllProducts();
   }
 
   onDelete = (id) => {
-    var { products } = this.state;
-    callApi(`products/${id}`, 'DELETE', null).then(response => {
-      var index = this.findIndex(products, id);
-      if (index !== -1) {
-        products.splice(index, 1);
-        this.setState({
-          products: products
-        });
-      }
-    });
+    this.props.onDeleteProduct(id);
   }
-  
   
   showProducts(products) {
     var result = null;
@@ -64,7 +33,7 @@ class ProductListPage extends Component {
   }
 
   render() {
-    var { products } = this.state;
+    var { products } = this.props;
 
     return (
       <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -85,5 +54,15 @@ const mapStateToProps = (state) => {
   }
 }
 
-// export default ProductListPage;
-export default connect(mapStateToProps , null)(ProductListPage);
+const mapDispatchToProps = (dispatch, props) => {
+  return {
+    fetchAllProducts : () => {
+      dispatch(actFetchProductRequest());
+    },
+    onDeleteProduct : (id) => {
+      dispatch(actDeleteProductRequest(id));
+    }
+  }
+}
+
+export default connect(mapStateToProps , mapDispatchToProps)(ProductListPage);
